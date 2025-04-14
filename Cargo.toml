@@ -1,0 +1,23 @@
+[package]
+name = "steam-api-client"
+version = "1.0.0"
+edition = "2024"
+readme = "README.md"
+authors = ["dpointtt <https://github.com/dpointtt>"]
+description = "Steam API Client for Rust"
+license = "MIT"
+repository = "https://github.com/dpointtt/steam-api-client"
+homepage = "https://github.com/dpointtt/steam-api-client/blob/main/README.md"
+keywords = ["steam", "client", "api", "rust"]
+categories = ["web-programming", "web-programming::http-client"]
+
+[dependencies]
+reqwest = {version = "0.12.15", features = ["json"]}
+serde = {version = "1.0.219", features = ["derive"]}
+serde_json = "1.0.140"
+thiserror = "2.0.12"
+
+[dev-dependencies]
+tokio = {version = "1.44.2", features = ["full"]}
+mockito = "1.7.0"
+anyhow = "1.0.98"
