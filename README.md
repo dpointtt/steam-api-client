@@ -19,11 +19,8 @@ A Rust library for interacting with the Steam Web API. This client provides easy
 
 ## Installation
 
-Add this to your `Cargo.toml`:
-
-```toml
-[dependencies]
-steam_api_client = { git = "https://github.com/dpointtt/steam-api-client" }
+```sh
+cargo add steam-api-client
 ```
 
 ## Usage
